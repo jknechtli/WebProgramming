@@ -13,7 +13,7 @@ node ./main.js
 ##Weekly 
 
 | week        | content           |
-| ------------- |-------------:|
+| ------------- |:-------------|
 | 1 | Intro to js and Nodejs |
 | 2 | Intro to Git      |
 | 3 | Creating NodeJs server      |
