@@ -1,16 +1,16 @@
-#Week2
+# Week2
 
 This is week 2 Web Programming lab.
 
-##install:
+## install:
 
 Clone down repository
 `npm i`
 
-##run:
+## run:
 node ./main.js
 
-##Weekly 
+## Weekly 
 
 | week        | content           |
 | ------------- |:-------------|
