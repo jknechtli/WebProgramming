@@ -1,7 +1,19 @@
+// const http = require('http');
+// const routes = require('./route.js');
+
+// http.createServer(routes.handleRequest).listen(3000);
+
+
+
+
+
+
+
+
+
 const express = require('express');
 const app = express();
 const http = require('http').Server(app);
-
 
 app.use(express.static(__dirname + '/www'));
 
@@ -12,7 +24,12 @@ const server = http.listen(3000, () => {
   console.log('Server listening on: ' + host + ' port: ' + port);
 })
 
+app.get('/test', (req, res) => {
+  res.sendFile(__dirname + '/www/test.html')
+});
 
-// const routes = require('./route.js')
+app.get('/login', (req, res) => {
+  res.sendFile(__dirname + '/www/login.html')
+});
 
-http.listen(3000)
+require('./routes/accountroute.js')(app, data)

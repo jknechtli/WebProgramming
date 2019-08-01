@@ -13,7 +13,6 @@ function renderHTML(path, response) {
   });
 }
 
-
 module.exports = {
   handleRequest: function (request, response) {
     response.writeHead(200, { 'Content-Type': 'text/html' });
@@ -21,6 +20,8 @@ module.exports = {
     var path = url.parse(request.url).pathname;
     if (path == '/') {
       renderHTML('./index.html', response);
+    } else if (path == '/login') {
+      renderHTML('./login.html', response);
     } else {
       response.writeHead(404);
       response.write('Route not defined');
