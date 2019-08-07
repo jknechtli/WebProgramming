@@ -1,0 +1,10 @@
+<div class="login-component">
+  <!-- <form> -->
+  <input type="text" name="username" id="username" #usernameInput (input)="username = usernameInput.value"
+    class="form-control">
+  <input type="password" name="password" id="password" #passwordInput (input)="password = passwordInput.value"
+    class="form-control">
+  <br>
+  <button (click)="login()" type="submit" class="form-control btn btn-primary">Login</button>
+  <!-- </form> -->
+</div>
