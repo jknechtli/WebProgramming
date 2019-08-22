@@ -1,0 +1,12 @@
+<div class="login-component">
+  <!-- <form> -->
+  <label for="username">username:</label>
+  <input type="text" name="username" id="username" #usernameInput (input)="user.username = usernameInput.value"
+    class="form-control">
+  <label for="password">password:</label>
+  <input type="password" name="password" id="password" #passwordInput (input)="user.password = passwordInput.value"
+    class="form-control">
+  <br>
+  <button (click)="login()" type="submit" class="form-control btn btn-primary">Login</button>
+  <!-- </form> -->
+</div>
